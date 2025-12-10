@@ -15,7 +15,7 @@ import lombok.NoArgsConstructor;
  * @date 10/12/2025
  * @time 13:04
  */
-@Data
+/*@Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
@@ -23,4 +23,7 @@ public class AccountDto {
     private Long id;
     private String accountHolderName;
     private double balance;
+}*/
+
+public record AccountDto(Long id, String accountHolderName, double balance) {
 }
